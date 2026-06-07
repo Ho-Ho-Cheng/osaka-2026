@@ -168,6 +168,45 @@ body{
 .boarding-pass .main{ font-weight:700; font-size:1.05rem; }
 .boarding-pass .sub{ font-size:0.85rem; color:var(--ink-soft); margin-top:0.2rem; }
 
+/* ===== Stay info cards（住宿資訊，不使用票券造型） ===== */
+.stay-row{
+  margin-top:1.6rem;
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:1.1rem;
+  max-width:860px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.stay-card{
+  background:rgba(251,243,227,0.96);
+  color:var(--ink);
+  border:2px solid var(--mustard);
+  border-left:8px solid var(--vermillion);
+  border-radius:4px;
+  padding:1rem 1.25rem;
+  text-align:left;
+  box-shadow:var(--shadow);
+}
+.stay-card .label{
+  font-family:"DotGothic16",monospace;
+  font-size:0.7rem;
+  letter-spacing:0.22em;
+  color:var(--vermillion-deep);
+  margin-bottom:0.35rem;
+}
+.stay-card .main{
+  font-family:"Noto Serif TC",serif;
+  font-weight:900;
+  font-size:1.05rem;
+  color:var(--ink);
+}
+.stay-card .sub{
+  font-size:0.85rem;
+  color:var(--ink-soft);
+  margin-top:0.25rem;
+}
+
 /* ===== Sections ===== */
 .section{
   max-width:1080px;
@@ -541,13 +580,16 @@ footer p{ font-size:0.82rem; color:rgba(241,228,204,0.7); max-width:640px; margi
       <div class="main">2026/6/29（一）BR177</div>
       <div class="sub">関西 T1　11:10　→　桃園 T2　13:05</div>
     </div>
-    <div class="boarding-pass">
-      <div class="label">STAY ｜ 住宿一　6/22–6/27（5晚）</div>
+  </div>
+
+  <div class="stay-row">
+    <div class="stay-card">
+      <div class="label">STAY 01 ｜ 住宿一　6/22–6/27（5晚）</div>
       <div class="main">VIA INN PRIME 心齋橋四橋</div>
       <div class="sub">大阪市西区新町 1-5-10</div>
     </div>
-    <div class="boarding-pass">
-      <div class="label">STAY ｜ 住宿二　6/27–6/29（2晚）</div>
+    <div class="stay-card">
+      <div class="label">STAY 02 ｜ 住宿二　6/27–6/29（2晚）</div>
       <div class="main">心齋橋長堀通哈頓飯店</div>
       <div class="sub">大阪市西区新町 1-5-11　・　與住宿一相距約 50 公尺，步行 1 分鐘可完成行李搬移</div>
     </div>
